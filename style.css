@@ -1,11 +1,11 @@
 @font-face {
   font-family: "BrotherTattoo";
-  src: url("/font/BrotherTattoo.woff") format("woff");
+  src: url("font/BrotherTattoo.woff") format("woff");
 }
 
 @font-face {
   font-family: "YAME";
-  src: url("/font/you-are-my-everythink-script-font-duo.woff") format("woff");
+  src: url("font/you-are-my-everythink-script-font-duo.woff") format("woff");
 }
 
 html {
@@ -108,7 +108,7 @@ header .show_menu :not(#burgerBtn) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/media/cover.png");
+  background-image: url("media/cover.png");
   background-position: center;
   width: 100%;
   height: 780px;
@@ -246,19 +246,19 @@ header .show_menu :not(#burgerBtn) {
 }
 
 #tattoo1 {
-  background-image: url("/media/tatoo1.png");
+  background-image: url("media/tatoo1.png");
 }
 
 #tattoo2 {
-  background-image: url("/media/tatoo2.png");
+  background-image: url("media/tatoo2.png");
 }
 
 #piercing1 {
-  background-image: url("/media/piercing1.png");
+  background-image: url("media/piercing1.png");
 }
 
 #piercing2 {
-  background-image: url("/media/piercing2.png");
+  background-image: url("media/piercing2.png");
 }
 
 /* --------------------------------- CONTACT -------------------------------- */
