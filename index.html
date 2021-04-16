@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="menu_nav">
+                <img id="burgerBtn" src="/media/icons8-menu.svg" alt="">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#tatouage">Tatouage</a></li>
+                <li><a href="#piercing">Piercing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cover">
+        <h1 class="cssanimation open infinite">Brother Tattoo</h1>
+    </div>
+
+    <div class="separate" id="tatouage">
+        <img src="/media/separate_left.png" alt="">
+        <h2>Tatouage</h2>
+        <img src="/media/separate_right.png" alt="">
+    </div>
+    <section class="tatouage">
+        <div class="article">
+            <article data-aos="fade-right">
+                <div class="bg_align" id="tattoo1">
+                    <h3>Votre Tatouage</h3>
+                </div>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor <span>sit</span> amet consectetur adipisicing elit. Commodi nisi explicabo culpa
+                    <span>error</span>
+                    consequatur?
+                    Dolor dolore corrupti fuga voluptates voluptatum illo maiores, quo nobis facere, voluptas
+                    temporibus inventore <span>molestias</span> itaque.
+                </p>
+            </article>
+        </div>
+
+        <div class="article">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Commodi</span> nisi explicabo culpa
+                    error
+                    consequatur?
+                    Dolor dolore corrupti fuga <span>voluptates</span> voluptatum illo maiores, quo nobis facere,
+                    voluptas
+                    temporibus inventore molestias itaque.</p>
+            </article>
+            <article data-aos="fade-left">
+                <div class="bg_align" id="tattoo2">
+                    <h3>à votre image</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="separate" id="piercing">
+        <img src="/media/separate_left.png" alt="">
+        <h2>Piercing</h2>
+        <img src="/media/separate_right.png" alt="">
+    </div>
+    <section class="piercing">
+        <div class="article">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi <span>explicabo</span> culpa
+                    error
+                    consequatur?
+                    <span>Dolor</span> dolore corrupti fuga voluptates voluptatum illo maiores, quo nobis facere,
+                    voluptas
+                    temporibus <span>inventore</span> molestias itaque.
+                </p>
+            </article>
+            <article data-aos="fade-left">
+                <div class="bg_align" id="piercing1">
+                    <h3>Le piercing</h3>
+                </div>
+            </article>
+        </div>
+
+        <div class="article">
+            <article data-aos="fade-right">
+                <div class="bg_align" id="piercing2">
+                    <h3>qui vous ressemble</h3>
+                </div>
+            </article>
+            <article>
+                <p>Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Commodi nisi explicabo culpa
+                    error
+                    consequatur?
+                    Dolor dolore corrupti fuga voluptates voluptatum illo maiores, quo nobis <span>facere</span>,
+                    voluptas
+                    temporibus inventore molestias itaque.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="separate" id="contact">
+            <img src="/media/separate_left.png" alt="">
+            <h2>Contactez-nous</h2>
+            <img src="/media/separate_right.png" alt="">
+        </div>
+        <div class="form">
+            <form action="" method="post">
+                <div>
+                    <label for="name">Nom:</label>
+                    <input type="text" name="name" id="" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="" placeholder="Votre Email">
+                </div>
+                <div>
+                    <label for="object">Objet</label>
+                    <input type="text" name="object" id="" placeholder="L'objet de votre mail">
+                </div>
+                <div>
+                    <label for="message">Votre Message</label>
+                    <textarea name="message" id="" placeholder="Votre message"></textarea>
+                </div>
+                <input type="submit" name="submit" value="Envoyé" id="send">
+            </form>
+            <div class="phone">
+                <h3>Par téléphone:</h3>
+                <p>01.02.03.04.05</p>
+            </div>
+        </div>
+        <div class="return">
+            <a href="#"><img src="/media/return.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+@font-face {
+  font-family: "BrotherTattoo";
+  src: url("/font/BrotherTattoo.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YAME";
+  src: url("/font/you-are-my-everythink-script-font-duo.woff") format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: #1d1d1b;
+  font-family: "YAME";
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+header {
+  height: 60px;
+}
+
+header .menu {
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+header .menu #burgerBtn {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  header .menu #burgerBtn {
+    display: block;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .menu :not(#burgerBtn) {
+    display: none;
+  }
+}
+
+header .menu li :hover {
+  color: #be1622;
+}
+
+header .menu li a {
+  -webkit-text-decoration-color: #be1622;
+          text-decoration-color: #be1622;
+}
+
+header .menu li a:hover {
+  -webkit-text-decoration-color: #1d1d1b;
+          text-decoration-color: #1d1d1b;
+}
+
+header .show_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .show_menu :not(#burgerBtn) {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  z-index: 999;
+  width: 200px;
+}
+
+/* ---------------------------------- COVER --------------------------------- */
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("/media/cover.png");
+  background-position: center;
+  width: 100%;
+  height: 780px;
+}
+
+@media screen and (max-width: 790px) {
+  .cover {
+    height: 500px;
+    background-size: cover;
+  }
+}
+
+.cover h1 {
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  font-family: "BrotherTattoo";
+  font-size: 200px;
+  color: #be1622;
+}
+
+@media screen and (max-width: 790px) {
+  .cover h1 {
+    white-space: initial;
+    font-size: 150px;
+  }
+}
+
+.open {
+  width: 100%;
+  overflow: hidden;
+  -webkit-animation-name: open;
+          animation-name: open;
+}
+
+@-webkit-keyframes open {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes open {
+  from {
+    width: 0;
+  }
+}
+
+.cssanimation,
+.cssanimation span {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.separate {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.separate img {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* --------------------------------- ARTICLE -------------------------------- */
+.article {
+  overflow: hidden;
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.article p {
+  margin: 20px 10px;
+  width: 450px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .article p {
+    width: 300px;
+  }
+}
+
+.article span {
+  color: #be1622;
+}
+
+.bg_align {
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: 450px;
+  height: 330px;
+  width: 450px;
+}
+
+@media screen and (max-width: 500px) {
+  .bg_align {
+    width: 300px;
+  }
+}
+
+.bg_align h3 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  color: #be1622;
+  font-size: 80px;
+  font-family: "BrotherTattoo";
+  text-align: center;
+}
+
+#tattoo1 {
+  background-image: url("/media/tatoo1.png");
+}
+
+#tattoo2 {
+  background-image: url("/media/tatoo2.png");
+}
+
+#piercing1 {
+  background-image: url("/media/piercing1.png");
+}
+
+#piercing2 {
+  background-image: url("/media/piercing2.png");
+}
+
+/* --------------------------------- CONTACT -------------------------------- */
+.phone {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form form,
+.form .phone {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .form form,
+  .form .phone {
+    width: 300px;
+  }
+}
+
+.form form div,
+.form .phone div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+}
+
+.form form div label,
+.form .phone div label {
+  text-align: center;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.form form div input,
+.form .phone div input {
+  width: 200px;
+}
+
+.form form div input::-webkit-input-placeholder,
+.form .phone div input::-webkit-input-placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div input:-ms-input-placeholder,
+.form .phone div input:-ms-input-placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div input::-ms-input-placeholder,
+.form .phone div input::-ms-input-placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div input::placeholder,
+.form .phone div input::placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div textarea,
+.form .phone div textarea {
+  width: 200px;
+}
+
+.form form div textarea::-webkit-input-placeholder,
+.form .phone div textarea::-webkit-input-placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div textarea:-ms-input-placeholder,
+.form .phone div textarea:-ms-input-placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div textarea::-ms-input-placeholder,
+.form .phone div textarea::-ms-input-placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form form div textarea::placeholder,
+.form .phone div textarea::placeholder {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#send {
+  background-color: #be1622;
+  color: black;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#send:hover {
+  background-color: #1d1d1b;
+  color: #be1622;
+}
+
+.phone h3 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #be1622;
+          text-decoration-color: #be1622;
+}
+
+.return {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
